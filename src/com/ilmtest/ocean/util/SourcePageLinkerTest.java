@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.ocean.lib.io.DBUtils;
+import com.ilmtest.lib.io.DBUtils;
 
 public class SourcePageLinkerTest
 {
@@ -23,7 +23,7 @@ public class SourcePageLinkerTest
 	{
 		SourcePageLinker instance = new SourcePageLinker();
 		
-		Connection master = DriverManager.getConnection("jdbc:sqlite:/Users/rhaq/workspace/canadainc_site/ocean/ilmtest/master.db");
+		Connection master = DriverManager.getConnection("jdbc:sqlite:/Users/rhaq/workspace/canadainc_site/ocean/api/master.db");
 		DBUtils.attach(master, "/Users/rhaq/workspace/resources/processed/28171.db", "flip");
 		
 		instance.process(master, 208);

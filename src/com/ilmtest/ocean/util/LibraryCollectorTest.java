@@ -8,8 +8,8 @@ import java.sql.SQLException;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.ocean.lib.io.DBUtils;
-import com.ocean.lib.io.IOUtils;
+import com.ilmtest.lib.io.DBUtils;
+import com.ilmtest.lib.io.IOUtils;
 
 public class LibraryCollectorTest
 {
